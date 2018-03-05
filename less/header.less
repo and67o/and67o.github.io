@@ -1,0 +1,138 @@
+@import "mixins.less";
+.header{
+	display: flex;
+	flex-flow: column nowrap;
+	position: relative;
+	width: 100%;
+	height: 770px;
+	&__navbar {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content:space-between;
+		align-items:center;
+		position: absolute;
+		z-index:1;
+		width: 100%;
+		height: 100px;
+		.navbar{
+			margin-right: 115px;
+			&__list{
+				opacity: 0.5;
+				&:hover{opacity: 1;}
+			}
+		}
+		.img-cart{
+			position: relative;
+			bottom: 4px;
+			cursor:pointer;
+			width: 42px;
+			height: 44px;
+			background: url("../img/Cart.png") no-repeat center;
+			&:hover{
+				transition:0.6s;
+				opacity:0.5;
+			}
+			.place-to-sum{
+				color: #fff;
+				text-align:center;
+				position: relative;
+				left:27px;
+				top:25px;
+				font-size:24px;
+				background: darken(@grey-color,50%);
+				border-radius: 100%;
+			}
+		}
+		.logo{
+			margin-left: 115px;
+			width: 51px;
+			height: 31px;
+		}
+	}
+	.mini-cart{
+		margin-left: -115px;
+		align-self: flex-end;
+		margin-top:90px;
+		z-index:1;
+		display: none;
+		position: absolute;
+		background: #fff;
+		width: 140px;
+		border: 2px solid @grey-color;
+		border-radius: 5px;
+		padding: 10px;
+		.btn-cart{
+			padding: 5px;
+			margin-bottom: 5px;
+			margin-top: 5px;
+		}
+	}
+	&__text{
+			align-self: center;
+			margin-top:300px;
+			margin-left: 88px;
+			position: absolute;
+			z-index:1;
+			.text-h3{	
+				opacity: 0.5;
+				text-decoration: underline;
+			}
+		}
+	&__slider{
+		overflow:hidden;
+		#slidewrapper {
+			position: relative;
+			width: calc(100% * 3);
+			transition: 1s;
+			transition-timing-function: ease-in-out;
+			.slide{	
+				width: calc(100%/3);
+				display: inline;
+				float: left;
+			}
+		}
+		.btn-nav{
+			display: flex;
+			flex-flow: row nowrap; 
+			justify-content: space-between;
+			position: relative;
+			padding-left: 115px;
+			padding-right: 115px;
+			bottom: 380px;
+		}
+		#btn-prev, 
+		#btn-next {font-size: 65px;}
+	}		
+}
+@media screen and (max-width: 768px) {
+	.header{
+		background: url("../img/bg__slider__second.png") center no-repeat  ;
+		&__navbar { 
+			.navbar{
+				display: none;
+				align-self: flex-start;
+				flex-flow: column nowrap;
+				height: 200px;
+				position: absolute;
+				top: 72px;
+				.img-cart{display:none}
+			}
+			.img-cart{
+				display:block;
+				margin-right: 17px;
+				.place-to-sum{
+					font-size:21px;
+					width: 27px;
+				} 
+			}
+			.logo{ display: none;}
+			.mobile-menu{
+				margin-left: 15px;
+				display:block;
+			}
+		}
+		.mini-cart{margin-left: -15px;}
+		&__text{margin-left:0;}
+		&__slider{display: none;}
+	}
+}

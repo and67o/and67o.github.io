@@ -1,0 +1,36 @@
+.pad-top-bot(@pt,@pb){
+	padding-top: @pt;
+	padding-bottom: @pb;
+}
+.pad-left-right(@pl,@pr){
+	padding-left: @pl;
+	padding-right: @pr;
+}
+.font-all(@fz,@ff,@fc,@fw, @fh,@fa){
+font-size: @fz;
+font-family: @ff, sans-serif;
+color: @fc;
+font-weight: @fw;
+line-height: @fh;
+text-align: @fa;
+}
+.m-l-r(@left,@right){
+	margin-left: @left;
+	margin-right: @right;
+}
+.animation( @name,@time,@type){
+	animation-name: @name;
+	animation-duration: @time;
+	animation-timing-function: @type;
+}
+.wid-hei(@wid, @hei){
+	width: @wid;
+	height: @hei;
+}
+.border(@bw, @bst, @bc, @br){
+	border-width: @bw;
+	border-style: @bst;
+	border-color: @bc;
+	border-radius: @br;
+}
+@grey-color: #b2b2b2;

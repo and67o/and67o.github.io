@@ -1,0 +1,36 @@
+header.header
+			nav.header__navbar
+				img(src="../img/logotype.png", alt=" logo").logo
+				img(src="../img/mobile-menu.png", alt="button for menu").mobile-menu.no-active#mobile-menu
+				ul.navbar
+					li.navbar__list
+						a(href="index.html") Home
+					li.navbar__list#link-magazine
+						a(href="#magazine") Shop
+					li.navbar__list#link-about
+						a(href="#footer") About
+					li.navbar__list
+						a(href="cart.html") cart
+					li.img-cart#img-cart
+						.place-to-sum 
+				.img-cart.no-active#img-cart-mobile
+					.place-to-sum 
+			.mini-cart#mini-cart
+				p You have <span class="place-to-sum">0</span> purchase
+				button.btn.btn-color-grey.btn-cart(href="cart.html")
+					a(href="cart.html") To cart
+				button.btn.btn-color-grey.btn-cart#close-mini-cart Сontinue shopping
+			.header__text
+				h1 Sky planet
+				h3.text-h3 Shop now
+			.header__slider
+				ul#slidewrapper
+					li.slide
+						img.slide-img(src="../img/bg__slider__second.png", alt="")
+					li.slide
+						img.slide-img(src="../img/bg__slider__first.png", alt="")
+					li.slide
+						img.slide-img(src="../img/bg__slider__third.png", alt="")
+				.btn-nav
+					.btn#btn-prev &lt;
+					.btn#btn-next &gt;

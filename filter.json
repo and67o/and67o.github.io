@@ -1,0 +1,137 @@
+{
+  "1": {
+    "number": 1,
+    "name": "Bottle Humidifier",
+    "cost": 69,
+    "categories": "Living",
+    "size": "Medium",
+    "brands": "Banshu Hamono", 
+    "color": "white"
+  },
+  "2": {
+    "number": 2,
+    "name": "Grey Watch",
+    "cost": 215,
+    "categories": "Accessories",
+    "size": "Small",
+    "brands": "Bower", 
+    "color": "black"
+  },
+  "3": {
+    "number": 3,
+    "name": "Sweeper and Nunnel",
+    "cost": 59,
+    "categories": "Living",
+    "size": "Large",
+    "brands": "Elevenplus", 
+    "color": "black"
+  },
+   "4": {
+    "number": 4,
+    "name": "Flower Scissors",
+    "cost": 159,
+    "categories": "Living",
+    "size": "Small",
+    "brands": "Braun",
+    "color": "black"
+  },
+  "5": {
+    "number": 5,
+    "name": "Teapot",
+    "cost": 55,
+    "categories": "Dining",
+    "size": "Medium",
+    "brands": "Elevenplus",
+    "color": "black"
+  },
+  "6": {
+    "number": 6,
+    "name": "White Bulb",
+    "cost": 349,
+    "categories": "Lighting",
+    "size": "Medium",
+    "brands": "Bower", 
+    "color": "white"
+  },
+  "7": {
+    "number": 7,
+    "name": "Beolit",
+    "cost": 599,
+    "categories": "Furniture",
+    "size": "Small",
+    "brands": "Braun",
+    "color": "white"
+  },
+  "8": {
+    "number": 8,
+    "name": "Bottle Unidifier",
+    "cost": 73,
+    "categories": "Living",
+    "size": "Large",
+    "brands": "Banshu Hamono", 
+    "color": "white"
+  },
+  "9": {
+    "number": 9,
+    "name": "Bookends",
+    "cost": 179,
+    "categories": "Furniture",
+    "size": "Small",
+    "brands": "Bower", 
+    "color": "black"
+  },
+  "10": {
+    "number": 10,
+    "name": "Grey Watch",
+    "cost": 341,
+    "categories": "Accessories",
+    "size": "Medium",
+    "brands": "Elevenplus",
+    "color": "green"
+  },
+  "11": {
+    "number": 11,
+    "name": "Bottle Liodifier",
+    "cost": 18,
+    "categories": "Living",
+    "size": "Medium",
+    "brands": "Banshu Hamono", 
+    "color": "red"
+  },
+  "12": {
+    "number": 12,
+    "name": "Sweeper and Funnel",
+    "cost": 138,
+    "categories": "Living",
+    "size": "Large",
+    "brands": "Bower", 
+    "color": "blue"
+  },
+  "13": {
+    "number": 13,
+    "name": "Beolit",
+    "cost":245,
+    "categories": "Furniture",
+    "size": "Medium",
+    "brands": "Field",
+    "color": "blue"
+  },
+  "14": {
+    "number": 14,
+    "name": "Bottle Ertdifier",
+    "cost": 26,
+    "categories": "Living",
+    "size": "Large",
+    "brands": "Banshu Hamono", 
+    "color": "red"
+  },
+  "15": {
+    "number": 15,
+    "name": "White Bulb",
+    "cost": 43,
+    "categories": "Lighting",
+    "size": "Small",
+    "brands": "Banshu Hamono", 
+    "color": "red"
+  }
+}

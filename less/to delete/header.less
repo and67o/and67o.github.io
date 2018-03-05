@@ -1,0 +1,54 @@
+@import 'mixins.less';
+.header{
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	flex-flow: column nowrap;
+	background-image: url('../../img/');
+	height: 730px;
+	
+	.navbar { 
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 0 10px;
+		
+		&__item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 120px; 
+			height: 30px;
+		
+			&:hover{
+				transition: 1.3s;
+				background: #4571D9; 
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.header{
+		.navbar {
+			justify-content:center;
+			img{
+				margin-left: 15px;
+				justify-content:center; 
+			} 
+		}
+		.photo {
+			position: relative;
+			top: 0;
+			width: 100%;
+			justify-content:center;
+			align-item:center;
+			img{display: none;}
+			&__second{
+				top: 0;
+				width: 290px;
+				p{text-align: center;}
+			}
+		}
+	}
+}

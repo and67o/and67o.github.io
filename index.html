@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>shop</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navbar"><img class="logo" src="../img/logotype.png" alt=" logo"><img class="mobile-menu no-active" src="../img/mobile-menu.png" alt="button for menu" id="mobile-menu">
+        <ul class="navbar">
+          <li class="navbar__list"><a href="index.html">Home</a></li>
+          <li class="navbar__list" id="link-magazine"><a href="#magazine">Shop</a></li>
+          <li class="navbar__list" id="link-about"><a href="#footer">About</a></li>
+          <li class="navbar__list"><a href="cart.html">cart</a></li>
+          <li class="img-cart" id="img-cart">
+            <div class="place-to-sum"> </div>
+          </li>
+        </ul>
+        <div class="img-cart no-active" id="img-cart-mobile">
+          <div class="place-to-sum"> </div>
+        </div>
+      </nav>
+      <div class="mini-cart" id="mini-cart">
+        <p>You have <span class="place-to-sum">0</span> purchase</p>
+        <button class="btn btn-color-grey btn-cart" href="cart.html"><a href="cart.html">To cart</a></button>
+        <button class="btn btn-color-grey btn-cart" id="close-mini-cart">Сontinue shopping</button>
+      </div>
+      <div class="header__text">
+        <h1>Sky planet</h1>
+        <h3 class="text-h3">Shop now</h3>
+      </div>
+      <div class="header__slider">
+        <ul id="slidewrapper">
+          <li class="slide"><img class="slide-img" src="../img/bg__slider__second.png" alt=""></li>
+          <li class="slide"><img class="slide-img" src="../img/bg__slider__first.png" alt=""></li>
+          <li class="slide"><img class="slide-img" src="../img/bg__slider__third.png" alt=""></li>
+        </ul>
+        <div class="btn-nav">
+          <div class="btn" id="btn-prev">&lt;</div>
+          <div class="btn" id="btn-next">&gt;</div>
+        </div>
+      </div>
+    </header>
+    <section class="magazine" id="magazine">
+      <div class="magazine__sort" id="magazine__sort">
+        <div class="categories">
+          <h2>Categories</h2>
+          <ul>
+            <li class="sort__list"><a href="#">All products</a><span class="index-list">15</span></li>
+            <li class="sort__list"><a href="#">Living</a><span class="index-list">07</span></li>
+            <li class="sort__list"><a href="#">Dining</a><span class="index-list">01</span></li>
+            <li class="sort__list"><a href="#">Furniture</a><span class="index-list">03</span></li>
+            <li class="sort__list"><a href="#">Accessories</a><span class="index-list">02</span></li>
+          </ul>
+        </div>
+        <h2>Filter by</h2>
+        <div id="price">
+          <h3>Price</h3>
+          <input type="range" min="0" max="600" step="10" v-model="value">
+          <div class="price-grid flex-row">
+            <div class="price__value" v-text="total"></div>
+            <button class="btn btn-color-grey btn-size-m" id="btn-filter">FILTER </button>
+          </div>
+        </div>
+        <div class="color">
+          <h3>Color</h3>
+          <button class="btn btn-color" data-color="white"></button>
+          <button class="btn btn-color" data-color="red"></button>
+          <button class="btn btn-color" data-color="blue"></button>
+          <button class="btn btn-color" data-color="green"></button>
+          <button class="btn btn-color" data-color="black"></button>
+        </div>
+        <div class="size">
+          <h3>Size</h3>
+          <ul>
+            <li class="sort__list"><a href="#">Small</a><span class="index-list">05</span></li>
+            <li class="sort__list"><a href="#">Medium</a><span class="index-list">06</span></li>
+            <li class="sort__list"><a href="#">Large</a><span class="index-list">07</span></li>
+          </ul>
+        </div>
+        <div class="brands">
+          <h3>Brands</h3>
+          <ul>
+            <li class="sort__list"><a href="#">Elevenplus</a><span class="index-list">3</span></li>
+            <li class="sort__list"><a href="#">Banshu Hamono</a><span class="index-list">05</span></li>
+            <li class="sort__list"><a href="#">Bower</a><span class="index-list">04</span></li>
+            <li class="sort__list"><a href="#">Braun</a><span class="index-list">02</span></li>
+            <li class="sort__list"><a href="#">Field</a><span class="index-list">01</span></li>
+          </ul>
+        </div>
+      </div>
+      <button class="btn btn-color-grey btn-mobile-filtr" id="btn-mobile-filtr"><span class="btn-switch" id="btn-switch">&lt;&lt;  </span></button>
+      <div class="magazine__item" id="magazine__item"></div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="discont">
+        <h2 class="discont-h2">Get Discount 35% off</h2>
+        <input class="c-email" placeholder="Enter Your email">
+        <!--button.btn.btn-color-grey.btn-discont.btn-size-m Send-->
+        <button class="btn btn-color-grey btn-discont">Send</button>
+      </div>
+      <div class="footer__item">
+        <p class="footer-name"> &copy; 2017 Maison. All rights reserved</p>
+        <ul class="navbar">
+          <li class="navbar__list"><a href="index.html">Home</a></li>
+          <li class="navbar__list" id="link-magazine-footer"><a href="#magazine">Shop</a></li>
+          <li class="navbar__list" id="link-about-footer"><a href="#footer">About</a></li>
+          <li class="navbar__list"><a href="cart.html">cart</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script  src="js/jquery-3.1.1.min.js"></script>
+    <script  src="js/vue.js"></script>
+    <script  src="js/main.js"></script>
+  </body>
+</html>

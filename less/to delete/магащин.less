@@ -1,0 +1,33 @@
+.main-cart{
+	h2{
+		align-self: center;
+		margin-top: 18px;
+	}
+	font-size: 42px;
+	display: flex;
+	justify-content:center;
+	flex-flow: column nowrap;
+	margin: 0 auto;
+	width: 400px;
+	&__item{
+		display: flex;
+		justify-content: center;
+		flex-flow: row nowrap;
+		align-items: center;
+		margin-bottom: 12px;
+		border-bottom: 2px solid #c1c1c1;
+		padding-bottom:5px;
+		.del-goods,.minus-goods,.plus-goods{
+			font-size: 25px;
+			border-radius:10px;
+			width: 30px;
+			height: 30px;
+			margin-right: 12px;
+			margin-left: 12px;
+		}
+		.del-goods{
+			margin-right: 12px;
+			border-radius: 100%;
+		}
+	}
+}

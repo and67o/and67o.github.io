@@ -1,0 +1,28 @@
+html
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		title shop-cart
+		meta(name='viewport', content="initial-scale=1.0, width=device-width")
+		link(rel="stylesheet" href="css/main.css")
+	body
+		.main-cart
+			.c-cart
+				form(action="index.html")
+					button(type="submit").btn.btn-color-grey.btn-back back
+				h2.cart-h2 cart
+			.cart
+				.cart__item
+				.cart__cost-order
+					h2.cost-order-h2 total value in the cart
+					ul.cost-order__final-price
+						li.total-value Price of value:
+							span
+						li.shiping Shipping:
+							span 26$
+						li.final-value Total value: 
+							span
+					button.btn.btn-buy.btn-color-grey go to purchase
+					p.cost-order-text &nbsp&nbspPrices and shipping costs are unconfirmed before proceeding to the order section.14-day return of goods, a refund fee and a refund for unsettled goods. Read about Read about the refund and reimbursement of the cost of the goods.
+		script(async src="js/jquery-3.1.1.min.js")
+		script(async src="js/cart.js")

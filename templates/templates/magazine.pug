@@ -1,0 +1,37 @@
+section.magazine#magazine
+			.magazine__sort#magazine__sort
+				.categories
+					h2 Categories
+					ul
+						each val, index in categories
+							li.sort__list
+								a(href="#")=val
+								span.index-list=index
+				h2 Filter by
+				#price
+					h3 Price
+					input(type="range" min="0" max="600" step="10" v-model="value")
+					.price-grid.flex-row
+						div(v-text="total").price__value
+						button.btn.btn-color-grey.btn-size-m#btn-filter FILTER 
+				.color
+					h3 Color
+					each item in colors
+						button.btn.btn-color(data-color=item)
+				.size
+					h3 Size
+					ul
+						each val, index in 	size
+							li.sort__list
+								a(href="#")=val
+								span.index-list=index
+				.brands
+					h3 Brands
+					ul
+						each val, index in brands
+							li.sort__list
+								a(href="#")=val
+								span.index-list=index
+			button.btn.btn-color-grey.btn-mobile-filtr#btn-mobile-filtr
+					span.btn-switch#btn-switch &lt;&lt;  
+			.magazine__item#magazine__item

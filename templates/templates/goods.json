@@ -1,0 +1,76 @@
+{
+  "1": {
+    "number": 1,
+    "name": "Bottle Humidifier",
+    "cost": 69
+  },
+  "2": {
+    "number": 2,
+    "name": "Grey Watch",
+   "cost": 215
+  },
+  "3": {
+    "number": 3,
+    "name": "Sweeper and Nunnel",
+    "cost": 59
+  },
+   "4": {
+    "number": 4,
+    "name": "Flower Scissors",
+    "cost": 159
+  },
+  "5": {"number": 5,
+    "name": "Teapot",
+    "cost": 55
+  },
+  "6": {
+    "number": 6,
+    "name": "White Bulb",
+    "cost": 349
+  },
+  "7": {
+    "number": 7,
+    "name": "Beolit",
+    "cost": 599
+  },
+  "8": {
+    "number": 8,
+    "name": "Bottle Unidifier",
+    "cost": 73
+  },
+  "9": {
+    "number": 9,
+    "name": "Bookends",
+    "cost": 179
+  },
+  "10": {
+    "number": 10,
+    "name": "Grey Watch",
+    "cost": 599
+  },
+  "11": {
+    "number": 11,
+    "name": "Bottle Liodifier",
+    "cost": 599
+  },
+  "12": {
+    "number": 12,
+    "name": "Sweeper and Funnel",
+    "cost": 599
+  },
+  "13": {
+    "number": 13,
+    "name": "Beolit",
+    "cost": 599
+  },
+  "14": {
+    "number": 14,
+    "name": "Bottle Ertdifier",
+    "cost": 599
+  },
+  "15": {
+    "number": 15,
+    "name": "White Bulb",
+    "cost": 599
+  }
+}
